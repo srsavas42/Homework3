@@ -55,7 +55,6 @@ exports.addNote = async (req, res) => {
 /* Finds the given note and updates it. returns the updated note */
 exports.updateNote = async (req, res) => {
     try{
-
         const updatedNote = await Note.findByIdAndUpdate(req.params.id, req.body, {
             new: true,
             runValidators: true
@@ -85,7 +84,6 @@ exports.deleteNote = async (req, res) => {
         return res.status(500).json({error: err.message})
     }
 }
-
 
 const valuesInput = data => {
     return {

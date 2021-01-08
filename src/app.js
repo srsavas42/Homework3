@@ -13,8 +13,6 @@ app.use(express.json());
 app.use(bodyParser.json())
 app.use(express.static("public"));
 
-
-
 /*This is the initialization of the database where we connect to the database*/
 mongoose.connect("mongodb://localhost:27017/Homework3", {
     useNewUrlParser: true,
@@ -33,7 +31,4 @@ app.use('/api', require('./routes/noteRoutes'))
 app.listen(process.env.PORT || 8000, () =>
   console.log('KeeperApi listening on port 8000!'),
 );
-
-
-
 

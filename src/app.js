@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 
 /*This is the initialization of the database where we connect to the database*/
-mongoose.connect("mongodb://localhost:27017/myapp", {
+mongoose.connect("mongodb://127.0.0.1:27017/myapp", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

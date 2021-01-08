@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 
 /*This is the initialization of the database where we connect to the database*/
-mongoose.connect("Paste the MongoDB Atlas connection link here", {
+mongoose.connect("mongodb+srv://srs42:<password>@cluster0.obply.mongodb.net/<dbname>?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

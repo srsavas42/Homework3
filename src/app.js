@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 
 /*This is the initialization of the database where we connect to the database*/
-mongoose.connect("mongodb+srv://srs42:<password>@cluster0.obply.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://localhost:27017/myapp", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
